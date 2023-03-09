@@ -1,1 +1,1 @@
-# capstone-gamecom
+# Gamecom

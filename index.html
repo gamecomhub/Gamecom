@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <title>GameCon | Home</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<!--Google icon -->
+    
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-cyborg-gaming.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+<!--TemplateMo 579 Cyborg Gaming https://templatemo.com/tm-579-cyborg-gaming-->
+<script src="assets/js/gameapi.js"></script> 
+</head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/gamecon-logo.png" alt="">
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Search End ***** -->
+                    <div class="search-input">
+                      <form id="search" action="#">
+                        <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword" onkeypress="handle" />
+                        <i class="fa fa-search"></i>
+                      </form>
+                    </div>
+                    <!-- ***** Search End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                      <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="streams.html">Games</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="details.html">Newsfeed</a></li>
+                      <!-- <i class='fa fa-user'></i></a> -->
+                      <!-- @else -->
+                    <li> <a href="{{ route('login') }}" class="font-semibold text-gray-600 hover:text-gray-900 focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500 p-2 pb-2 mt-1">
+  <i class='fa fa-user'></i></a> </li>
+                      <li class="cart" ><a href="cart02.html"><i class='fa-solid fa-cart-shopping'> <ion-icon name="basket"></ion-icon><span class="badge" style="
+                        position: relative;
+                        top: -12px;
+                        left: -11px;
+                        /* right: -25px; */
+                        /* padding: 10px 12px; */
+                        border-radius: 50%;
+                        background-color: red;
+                        color: white;">0 </span></i></a></li>
+                            <li class="d-none"> <a href="streams.html" type="hidden" >Chat</a></li>
+                    </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="page-content">
+
+          <!-- ***** Banner Start ***** -->
+
+           
+          
+          <div class="main-banner carousel slide" id="header" data-bs-ride = "carousel">
+            <div class="row">
+              <div class = "container h-100 d-flex align-items-center carousel-inner">
+                <div class = "text-center carousel-item active">
+                  <div class="header-text">
+                  
+                    <h6>Welcome To GameCom</h6>
+                    <h4><em>Connect</em> and have fun with gamers worldwide!</h4>
+                   
+                  </div>
+                </div>
+                <div class = "text-center carousel-item">
+                  <div class="header-text">
+                  
+                    <h6>Welcome To GameCom</h6>
+                    <h4><em>Elevate</em>  your game with our social community! </h4>
+                  
+                  </div>
+                </div>
+            </div>
+            <button class = "carousel-control-prev" type = "button" data-bs-target="#header" data-bs-slide = "prev">
+              <span class = "carousel-control-prev-icon"></span>
+          </button>
+          <button class = "carousel-control-next" type = "button" data-bs-target="#header" data-bs-slide = "next">
+              <span class = "carousel-control-next-icon"></span>
+          </button>
+
+          
+              <!-- <div class="col-lg-7">
+                <div class="header-text">
+                  
+                  <h6>Welcome To Cyborg</h6>
+                  <h4><em>Browse</em> Our Popular Games Here</h4>
+                  <div class="main-button">
+                    <a href="browse.html">Browse Now</a>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+          <!-- ***** Banner End ***** -->
+
+          <!-- ***** Most Popular Start ***** -->
+          <div class="most-popular">
+            <div class="row" >
+              <div class="col-lg-12">
+                <div class="heading-section">
+                  <h4><em>Most Popular</em> Right Now</h4>
+                </div>
+                <div class="row">
+                  <div class="row" id="games-container">
+
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="item">
+                      <a href="https://www.dota2.com/news" target="_blank" rel="noopener noreferrer"><img src="https://www.freetogame.com/g/229/thumbnail.jpg" class="game-image" alt=""></a>
+                      <h6 class="view" onmousedown="return false" onselectstart="return false">View Game</h6>
+                      <h4>Dota 2<br><span><i class="fa fa-gamepad"></i> MOBA</span><span class=""> Valve</span></h4>
+                      
+                      <ul>
+                        <li><i class="fa fa-laptop"></i> PC</li>
+                        <li><i class="fa fa-star"></i> 4.8</li>
+                        <li><i class="fa fa-download"></i> 2.3M</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="item">
+                     <a href="https://www.fortnite.com/" target="_blank" rel="noopener noreferrer"> <img src="https://www.freetogame.com/g/57/thumbnail.jpg" class="game-image" alt=""></a>
+                        <h6 class="view" onmousedown="return false" onselectstart="return false">View Game</h6>
+                        <h4>Fortnite<br><span><i class="fa fa-gamepad"></i> Shooting</span><span>Epic Games</span></h4>
+                    
+                      <ul>
+                        <li><i class="fa fa-laptop"></i> PC</li>
+                        <li><i class="fa fa-star"></i> 4.8</li>
+                        <li><i class="fa fa-download"></i> 2.3M</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="item">
+                     <a href="https://www.leagueoflegends.com/en-ph/" target="_blank" rel="noopener noreferrer"><img src="https://www.freetogame.com/g/286/thumbnail.jpg" class="game-image" alt=""></a> 
+                      <h6 class="view">View Game</h6>
+                      <h4>LeagueofLegends<br><span><i class="fa fa-gamepad"></i> MOBA</span><span></span><span>Riot Games</span></h4>
+                      <ul>
+                        <li><i class="fa fa-laptop"></i> PC</li>
+                        <li><i class="fa fa-star"></i> 4.8</li>
+                        <li><i class="fa fa-download"></i> 3.3M</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="item ">
+                      <a href="https://m.mobilelegends.com/en" target="_blank" rel="noopener noreferrer"> <img src="https://images.indiafantasy.com/wp-content/uploads/20220617022802/Webp.net-compress-image-26-30.jpg" class="game-image" alt=""></a>
+                      <h6 class="view">View Game</h6>
+                      <h4>Mobile Legends<br><span><i class="fa fa-gamepad"></i> MOBA</span><span></span><span>Moontoon</span></h4>
+                      <ul>
+                        <li><i class="fa-solid fa-mobile-screen-button"></i> Mobile</li>
+                        <li><i class="fa fa-star"></i> 4.8</li>
+                        <li><i class="fa fa-download"></i> 500M</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- <div class="col-lg-6">
+                    <div class="item">
+                      <div class="row">
+                        <div class="col-lg-6 col-sm-6">
+                          <div class="item inner-item">
+                            <img src="assets/images/popular-05.jpg" alt="">
+                            <h4>Mini Craft<br><span>Legendary</span></h4>
+                            <ul>
+                              <li><i class="fa fa-star"></i> 4.8</li>
+                              <li><i class="fa fa-download"></i> 2.3M</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6">
+                          <div class="item">
+                            <img src="assets/images/popular-06.jpg" alt="">
+                            <h4>Eagles Fly<br><span>Matrix Games</span></h4>
+                            <ul>
+                              <li><i class="fa fa-star"></i> 4.8</li>
+                              <li><i class="fa fa-download"></i> 2.3M</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div> -->
+                  <!-- <div class="col-lg-3 col-sm-6">
+                    <div class="item">
+                      <img src="assets/images/popular-07.jpg" alt="">
+                      <h4>Warface<br><span>Max 3D</span></h4>
+                      <ul>
+                        <li><i class="fa fa-star"></i> 4.8</li>
+                        <li><i class="fa fa-download"></i> 2.3M</li>
+                      </ul>
+                    </div>
+                  </div> -->
+                  <!-- <div class="col-lg-3 col-sm-6">
+                    <div class="item">
+                      <img src="assets/images/popular-08.jpg" alt="">
+                      <h4>Warcraft<br><span>Legend</span></h4>
+                      <ul>
+                        <li><i class="fa fa-star"></i> 4.8</li>
+                        <li><i class="fa fa-download"></i> 2.3M</li>
+                      </ul>
+                    </div>
+                  </div> -->
+                  <div class="col-lg-12">
+                    <div class="main-button">
+                      <a href="browse.html">Discover Popular</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Most Popular End ***** -->
+
+          <!-- ***** Gaming Library Start ***** -->
+<!--           <div class="gaming-library">
+            <div class="col-lg-12">
+              <div class="heading-section">
+                <h4><em>Your Gaming</em> Library</h4>
+              </div>
+              <div class="item">
+                <ul>
+                  <li><img src="assets/images/game-01.jpg" alt="" class="templatemo-item"></li>
+                  <li><h4>Dota 2</h4><span>Sandbox</span></li>
+                  <li><h4>Date Added</h4><span>24/08/2036</span></li>
+                  <li><h4>Hours Played</h4><span>634 H 22 Mins</span></li>
+                  <li><h4>Currently</h4><span>Downloaded</span></li>
+                  <li><div class="main-border-button border-no-active"><a href="#">Donwloaded</a></div></li>
+                </ul>
+              </div>
+              <div class="item">
+                <ul>
+                  <li><img src="assets/images/game-02.jpg" alt="" class="templatemo-item"></li>
+                  <li><h4>Fortnite</h4><span>Sandbox</span></li>
+                  <li><h4>Date Added</h4><span>22/06/2036</span></li>
+                  <li><h4>Hours Played</h4><span>740 H 52 Mins</span></li>
+                  <li><h4>Currently</h4><span>Downloaded</span></li>
+                  <li><div class="main-border-button"><a href="#">Donwload</a></div></li>
+                </ul>
+              </div>
+              <div class="item last-item">
+                <ul>
+                  <li><img src="assets/images/game-03.jpg" alt="" class="templatemo-item"></li>
+                  <li><h4>CS-GO</h4><span>Sandbox</span></li>
+                  <li><h4>Date Added</h4><span>21/04/2036</span></li>
+                  <li><h4>Hours Played</h4><span>892 H 14 Mins</span></li>
+                  <li><h4>Currently</h4><span>Downloaded</span></li>
+                  <li><div class="main-border-button border-no-active"><a href="#">Donwloaded</a></div></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="main-button">
+                <a href="profile.html">View Your Library</a>
+              </div>
+            </div>
+          </div> -->
+          <!-- ***** Gaming Library End ***** -->
+                  <!-- ***** Trend Items Start ***** -->
+                  <div class="most-popular">
+                    <div class="row" >
+                      <div class="col-lg-12">
+                        <div class="heading-section">
+                          <h4><em>Trend Items</em> Right Now</h4>
+                        </div>
+                        <div class = "row g-0">
+                        <div class = "d-flex flex-wrap justify-content-center mt-5 filter-button-group">
+                            <button type = "button" class = "btn m-2 text-white border active-filter-btn" data-filter = "*">All</button>
+                            <button type = "button" class = "btn m-2 text-white border" data-filter = ".best">Best Sellers</button>
+                            <button type = "button" class = "btn m-2 text-white border" data-filter = ".feat">Computer Parts</button>
+                            <button type = "button" class = "btn m-2 text-white border" data-filter = ".new">Merch</button>
+                        </div>
+                        <div class="container-products" id="container-products">
+                          <div class = "collection-list mt-4 row gx-0 mt-0">
+                            <div class="col-md-6 col-lg-4 col-xl-3 p-2 feat" id="col-items">
+                              <div class="image">
+                                  <div class = "collection-img position-relative">
+                                      <img src ="assets/images/gamingchair.jpg" class = "w-100">
+                                      <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                                  </div>
+                                  <div class = "text-center">
+                                      <p class = "text-capitalize my-1 ">Still life Gaming Chair </p>
+                                      </div> 
+                                      <div class="text-center"><span class="fw-bold text-white">4550.00</span>
+                                      </div>
+                                  <div class="btns text-center">
+                                  <a class="add-cart cart0" href="#"><button type="button" class="btn border mt-3 text-white shadow-none" onclick="window.location.reload()"
+                                  data-product="gamingchair"
+                                  data-price="₱ 4,550"
+                                  onclick="addToCart(this);">
+                                  Add Cart
+                                  </button></a>
+                                  <input type="hidden" value="4550" />
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-6 col-lg-4 col-xl-3 p-2 new" id="col-items">
+                          <div class="image">
+                              <div class = "collection-img position-relative">
+                                  <img src ="assets/images/bluekeyboard.jpg" class = "w-100">
+                                  <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                              </div>
+                              <div class = "text-center">
+                                  <p class = "text-capitalize my-1 ">High-End Blue Keyboard </p>
+                                  </div> 
+                                  <div class="text-center"><span class="fw-bold text-white">1550.00</span>
+                                  </div>
+                              <div class="btns text-center">
+                              <a class="add-cart cart1" href="#"><button type="button" class="btn border mt-3 text-white shadow-none" onclick="window.location.reload()"
+                              data-product="bluekeyboard"
+                              data-price="₱ 2,500"
+                              onclick="addToCart(this);">
+                              Add Cart
+                              </button></a>
+                              <input type="hidden" value="2550" />
+                              </div>
+                          </div>
+                      </div>
+                          <div class="col-md-6 col-lg-4 col-xl-3 p-2 best" id="col-items">
+                          
+                          <div class="image">
+                              <div class = "collection-img position-relative">
+                                  <img src ="assets/images/vrheadset.jpg" class = "w-100 " height="155px">
+                                  <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                              </div>
+                             <div class = "text-center">
+                                  <p class = "text-capitalize my-1 ">VR Headset</p>
+                                  </div> 
+                                  <div class="text-center"><span class="fw-bold text-white">10550.00</span>
+                                  </div>
+                              <div class="btns text-center">
+                              <a class="add-cart cart2" href="#"><button type="button" class="btn border mt-3 text-white shadow-none" onclick="window.location.reload()"
+                              data-product="vrheadset"
+                              data-price="₱ 10,500"
+                              onclick="addToCart(this);">
+                              Add Cart</button></a>
+                              <input type="hidden" value="10500" /></div>
+                          </div>
+                      </div>
+                          <!-- <div class="col-md-6 col-lg-4 col-xl-3 p-2 new" id="col-items">
+                          <div class="image">
+                              <div class = "collection-img position-relative">
+                                  <img src ="assets/images/valoshirt.jpg" class = "w-100" height="155px">
+                                  <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                              </div>
+                              <div class = "text-center">
+                                  <p class = "text-capitalize my-1 ">Valorant T-Shirt</p>
+                                  </div> 
+                                  <div class="text-center"><span class="fw-bold text-white">1050.00</span>
+                                  </div>
+                                  <div class="btns text-center">
+                              <a class="add-cart cart3" href="#"><button type="button" class="btn border mt-3 text-white shadow-none" onclick="window.location.reload()"
+                              data-product="valoshirt"
+                              data-price="₱ 1,050"
+                              onclick="addToCart(this);">
+                              Add Cart</button>
+                            </a>
+                              <input type="hidden" value="1050" /></div>
+                          </div>
+                      </div>
+                       <div class="col-md-6 col-lg-4 col-xl-3 p-2"></div>
+                       <div class="col-md-6 col-lg-4 col-xl-3 p-2"></div>
+                      <div class="col-md-6 col-lg-4 col-xl-3 p-2 new" id="col-items">
+                          <div class="image">
+                              <div class = "collection-img position-relative">
+                                  <img src ="assets/images/cup.jpg" class = "w-100" height="155px">
+                                  <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                              </div>
+                              <div class = "text-center">
+                                  <p class = "text-capitalize my-1 ">Lucky 7 Cup</p>
+                                  </div> 
+                                  <div class="text-center"><span class="fw-bold text-white">550.00</span>
+                                  </div>
+                                  <div class="btns text-center">
+                              <a class="add-cart cart4" href="#"><button type="button" class="btn border mt-3 text-white shadow-none" onclick="window.location.reload()"
+                              data-product="cup"
+                              data-price="₱ 0,550"
+                              onclick="addToCart(this);">
+                              Add Cart</button></a>
+                              <input type="hidden" value="550" /></div>
+                          </div>
+                      </div>
+                         <div class="col-md-6 col-lg-4 col-xl-3 p-2 " id="col-items">
+                          
+                          <div class="image">
+                              <div class = "collection-img position-relative">
+                                  <img src ="assets/images/vrheadset.jpg" class = "w-100 " height="155px">
+                                  <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                              </div>
+                             <div class = "text-center">
+                                  <p class = "text-capitalize my-1 ">VR Headset(2nd) Hand</p>
+                                  </div> 
+                                  <div class="text-center"><span class="fw-bold text-white">5550.00</span>
+                                  </div>
+                              <div class="btns text-center">
+                              <a class="add-cart cart5" href="#"><button type="button" class="btn border mt-3 text-white shadow-none" onclick="window.location.reload()"
+                              data-product="vrheadset"
+                              data-price="₱ 5,500"
+                              onclick="addToCart(this);">
+                              Add Cart</button></a>
+                              <input type="hidden" value="5500" /></div>
+                          </div>
+                      </div> -->
+                      </div>
+                      </div>
+                  
+                  
+                    </div>
+                        <div class="row">
+                        
+                          <div class="col-lg-12 mt-3">
+                            <div class="main-button">
+                              <a href="shop.html">Shop new Items</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ***** Trend Items End ***** -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright © 2023 <a href="#">GameCom</a> Company. All rights reserved. 
+          
+<!--           <br>Design: <a href="https://templatemo.com" target="_blank" title="free CSS templates">TemplateMo</a></p> -->
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
+    
+     <!--jquery-->
+     <script src="assets/js/jquery-3.6.3.js"></script>
+
+<!---isotope js----->
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+<!--custom JS-->
+<script src = "assets/js/script.js"></script> 
+        
+<!-- <script src="main.js"></script> -->
+<script src="main2.js"></script>
+  </body>
+
+</html>

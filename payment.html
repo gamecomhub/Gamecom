@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <title>GameCon | Cart</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> -->
+<!--Google icon -->
+    
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-cyborg-gaming.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+<!--TemplateMo 579 Cyborg Gaming https://templatemo.com/tm-579-cyborg-gaming-->
+<script src="assets/js/gameapi.js"></script> 
+</head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+ <!-- ***** Header Area Start ***** -->
+ <header class="header-area header-sticky">
+  <div class="container">
+      <div class="row">
+          <div class="col-12">
+              <nav class="main-nav">
+                  <!-- ***** Logo Start ***** -->
+                  <a href="index.html" class="logo">
+                      <img src="assets/images/gamecon-logo.png" alt="">
+                  </a>
+                  <!-- ***** Logo End ***** -->
+                  <!-- ***** Search End ***** -->
+                  <div class="search-input">
+                    <form id="search" action="#">
+                      <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword" onkeypress="handle" />
+                      <i class="fa fa-search"></i>
+                    </form>
+                  </div>
+                  <!-- ***** Search End ***** -->
+                  <!-- ***** Menu Start ***** -->
+                  <ul class="nav">
+                    <li><a href="index.html" class="">Home</a></li>
+                      <li><a href="streams.html">Games</a></li>
+                      <li><a href='browse'>Shop</a></li>
+                      <li><a href="details.html">Newsfeed</a></li>
+                    <!-- <i class='fa fa-user'></i></a> -->
+                    <!-- @else -->
+                    <!---MAGULO PAGPASENSYA NY SIR, naka route pa yan XD -->
+                  <li> <a href="{{ route('login') }}" class="font-semibold text-gray-600 hover:text-gray-900 focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500 p-2 pb-2 mt-1">
+<i class='fa fa-user'></i></a> </li>
+                    <li class="cart" ><a href="cart02.html"><i class="fa-solid fa-cart-shopping "> <span class="badge" style="
+                      position: relative;
+                      top: -12px;
+                      left: -11px;
+                      /* right: -25px; */
+                      /* padding: 10px 12px; */
+                      border-radius: 50%;
+                      background-color: red;
+                      color: white;">0 </span></i></a></li>
+                          <li class="d-none"> <a href="streams.html" type="hidden" >Chat</a></li>
+                  </ul>   
+                  <a class='menu-trigger'>
+                      <span>Menu</span>
+                  </a>
+                  <!-- ***** Menu End ***** -->
+              </nav>
+          </div>
+      </div>
+  </div>
+</header>
+<!-- ***** Header Area End ***** -->
+
+  <div class="container">
+    <div class="page-content2">
+        <button class=" btn-add position-relative border-0 bg-transparent text-white px-5" type="button" onclick="location.href='cart02.html'">   
+          <i class="fa fa-solid fa-arrow-left"></i>
+    Back</span>
+  </button>
+      </div>
+             <div class="row mt-0">
+      <div class="col-lg-12">
+        <div class="page-content">
+            <div class="row">
+                <div class="col">
+                    <div class="col">
+                       
+                        <div class="form-check text-white" style="margin-left: 5vw;">
+                           
+                            <input class="form-check-input" type="radio" id="creditcardradio" name="gridRadios" value="Three">
+                                     Credit / Debit Card
+                                    <label class="form-check-label" for="creditcardradio">
+                                    </label>
+                                    <br>
+                          </div>
+                          <div class="col">
+                            <div class="form-check text-white" style="margin-left: 5vw;">    
+                                <input class="form-check-input" type="radio" id="gcashradio" name="gridRadios" value="Two">
+                                       Online Payment
+                                        <label class="form-check-label" for="gcashradio">
+                                        </label>
+                                        <br>
+                            </div>   
+                          </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <!----START of Gcash payment row-->
+                    <div class="row justify-content-center align-items-start g-2">
+                        <div id="showTwo" class="myDiv" style="width: 500px;">
+                        <h4><strong>Pay with Gcash</strong></h4>
+                           
+                        <button type="button" class="btn btn-secondary" onclick="window.history.back()" >Add / Edit Items in Cart
+                            </button>
+                            <br>
+                            <hr>
+                            <p>You may scan our QR code below to proceed with your payment using <span><a href="https://www.gcash.com/"><img src="images/gcashlogo img.jpg" alt="GcashLogo" style="width: 90px;"></a></span></p>
+                            <p>Alternatively, you may also pay using the details below:</p>
+                            <ul>
+                            <li><b>Gcash Number: 09153542074</b></li>
+                            <li><b>Owner: Joseph Eslais</b></li>
+                            </ul>
+                            <p style="color: red;">Please do not forget to <b>Save/Download</b> or take a <b>Screenshot</b> image of your payment, and save to your device.</p>
+                            <br>
+                            <div class="row">
+                            <!---<center><a href="images/vanityprincessQRcode img.jpg" download>Download QR Code to your Device</a></center>--->
+                            <!---<br><br>--->
+                            <img src="images/vanityprincessQRcode img.png" alt="GcashQRcodeVanityPrincess">
+                            </div>
+                            <br>
+
+                            <p>Please send the image of your payment to our Facebook Messenger or Viber account, and we will assist in <b>Booking your Appointment.</b></p>
+                            
+                        <a href="https://www.facebook.com/messages/t/113646558287367"><img src="images/fblogo img.png" alt="" width="50"></a>
+                            <a href="viber://chat?number=639854670003"><img src="images/viberlogo img.png" alt=""></a>
+                            <br><br>
+                        <button type="button" class="btn btn-secondary" onclick="gcashDone()">DONE</button>
+                            
+                        </div>
+                    </div>
+                    <!----END of Gcash payment row-->
+                </div>
+                <div class="col">
+                    <div class="row justify-content-center align-items-start g-2">
+                        <div class="text-white">
+                     Payment Information
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright © 2023 <a href="#">GameCom</a> Company. All rights reserved. 
+          
+<!--           <br>Design: <a href="https://templatemo.com" target="_blank" title="free CSS templates">TemplateMo</a></p> -->
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- <script src="js/main.js"></script> -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
+    
+     <!--jquery-->
+     <script src="assets/js/jquery-3.6.3.js"></script>
+
+<!---isotope js----->
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+<!--custom JS-->
+<script src = "assets/js/script.js"></script> 
+        
+<!-- <script src="main.js"></script> -->
+<script src="main2.js"></script>
+<script>
+  function validateCart() {
+  const qty = localStorage.getItem('cartNumbers');
+  const itemQty = parseInt(qty);
+  const url = "payment.html"
+  
+
+  if (itemQty > 0) {
+      window.location = url;
+      
+  } else {
+      
+      document.getElementById("demo3").innerHTML = "Please add items to your cart";
+  }
+} 
+</script>
+
+
+<!------JS for CHOOSE PAYMENT MODE-->
+<script>
+    let cart = localStorage.getItem("totalCost");
+    cart = parseInt(cart).toLocaleString();
+    let n = cart.valueOf();
+    document.getElementById('demo9').innerHTML = n;
+    document.getElementById('demo8').innerHTML = n;
+    if (!isNan(n)) {
+      n.style.visibility = "hidden";
+    }
+  </script>
+  
+<script>
+    $(document).ready(function(){
+        $('input[type="radio"]').click(function(){
+            var demovalue = $(this).val(); 
+            $("div.myDiv").hide();
+            $("#show"+demovalue).show();
+        });
+    });
+</script>
+
+<script>
+  function showElement() {
+    element = document.querySelector('.payment');
+    element.style.visibility = 'visible';
+  }
+</script>
+  </body>
+
+</html>
